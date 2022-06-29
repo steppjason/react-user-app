@@ -5,13 +5,7 @@ import UserList from "./components/Users/UserList"
 import Modal from "./components/UI/Modal"
 
 function App() {
-	const USERS = [
-		{
-			id: 1,
-			username: "Jason",
-			age: 36,
-		},
-	]
+	const USERS = []
 
 	const [users, setUsers] = useState(USERS)
 	const [error, setError] = useState()
