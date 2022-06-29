@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+	background-color: rgb(253, 253, 253);
+}
+
+input {
+	padding: 0.75rem;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid rgb(240, 240, 240);
+	margin: 0 2rem 0 0;
+}
+
+label {
+	margin: 0 1rem 0 0;
+}
+
+button {
+
+	margin: 1rem 0 0 0;
+	padding: 0.75rem;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid rgb(240, 240, 240);
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 2rem auto;
+}
+
+.card {
+	background-color: rgb(250, 250, 250);
+	box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.123);
+	border-radius: 10px;
+	padding: 1.5rem;
+	margin: 0 0 2rem 0;
+}
+
+.userlist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.userlist__user {
+	border-bottom: 1px solid rgb(241, 241, 241);
+	margin: 0 0 1rem 0;
+}
+
+.userlist__user:last-child, .userlist__user:last-child > .userlist__age{
+	margin:0;
+	border: 0;
+}
+
+.userlist__username {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin: 0 0 0.5rem 0;
+}
+
+.userlist__age {
+	font-style: italic;
+	margin: 0 0 0.75rem 0;
+}
+
+.modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.219);
+	position: fixed;
+	top:0 ;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+  height: 100vh;
+}
+
+.modal__title {
+	margin: 0 0 1rem 0;
+}
+
+.modal > .card {
+	width: 600px;
+}
+
